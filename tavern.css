@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria Hallelujah');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Gloria Hallelujah;
+}
+
+/* top section */
+header{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+header span{
+    color: #fb840b;
+}
+
+nav{
+    background-color: #f39f3f;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 5px #fb840b;
+}
+
+nav p{
+    font-size: 2rem;
+}
+
+/* middle section */
+.container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to right top, #fb840b, #f39f3f, #ecb56a, #e6c896, #e3d9c4);
+}
+
+.barkeep{
+    padding: 15px;
+    width: 200px;
+    height: 40vh;
+    text-align: center;
+    background-color: aliceblue;
+    border: black double 2px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.barkeep h2, .barkeep p, .barkeep button{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.barkeep:hover, .table:hover{
+    cursor: pointer;
+    padding: 20px;
+}
+
+.barkeep:active, .table:active{
+    transform: translateY(2px);
+}
+
+.table{
+    padding: 15px;
+    width: 200px;
+    height: 40vh;
+    text-align: center;
+    background-color: aliceblue;
+    border: black double 2px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.table p, .table h2, .table button{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+.tavern{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 65%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+/* end section */
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+    .barkeep,
+    .tavern,
+    .table{
+        text-align: center;
+        width: 90%;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .container{
+        display: block;
+        text-align: center;
+    }
+}

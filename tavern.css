@@ -42,7 +42,7 @@ nav p{
     background-image: linear-gradient(to right top, #fb840b, #f39f3f, #ecb56a, #e6c896, #e3d9c4);
 }
 
-.barkeep{
+.card{
     padding: 15px;
     width: 200px;
     height: 40vh;
@@ -53,36 +53,19 @@ nav p{
     box-shadow: 5px 5px 5px black;
 }
 
-.barkeep h2, .barkeep p, .barkeep button{
+.card h2, .card p, .card button{
     margin-top: 20px;
     margin-bottom: 40px;
 }
 
-.barkeep:hover, .table:hover{
+.card:hover{
     cursor: pointer;
     padding: 20px;
 }
 
-.barkeep:active, .table:active{
+.card:active{
     transform: translateY(2px);
 }
-
-.table{
-    padding: 15px;
-    width: 200px;
-    height: 40vh;
-    text-align: center;
-    background-color: aliceblue;
-    border: black double 2px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px black;
-}
-
-.table p, .table h2, .table button{
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
 
 .tavern{
     margin-top: 20px;
@@ -102,14 +85,18 @@ footer{
 
 /* Media Queries */
 @media(max-width: 768px){
-    .barkeep,
-    .tavern,
-    .table{
+    .card,
+    .tavern{
         text-align: center;
         width: 90%;
         font-size: 16px;
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+
+    .card:hover{
+        cursor: pointer;
+        padding:15;
     }
 
     .container{

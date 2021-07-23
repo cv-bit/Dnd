@@ -64,7 +64,7 @@ nav p{
 }
 
 .card:active{
-    transform: translateY(2px);
+    transform: translateY(4px);
 }
 
 .tavern{
@@ -96,7 +96,7 @@ footer{
 
     .card:hover{
         cursor: pointer;
-        padding:15;
+        padding:15px;
     }
 
     .container{

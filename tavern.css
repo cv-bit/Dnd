@@ -6,6 +6,10 @@
     font-family: Gloria Hallelujah;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* top section */
 header{
     background-color: black;
@@ -36,6 +40,7 @@ nav p{
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
+    min-height: 75vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -51,16 +56,18 @@ nav p{
     border: black double 2px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
+    transition: all 200ms ease-in-out;
 }
 
 .card h2, .card p, .card button{
+    color: #000;
     margin-top: 20px;
     margin-bottom: 40px;
 }
 
 .card:hover{
     cursor: pointer;
-    padding: 20px;
+    transform: scale(102%);
 }
 
 .card:active{
